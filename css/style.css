@@ -1,0 +1,58 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.b1,.b2,.b3,.b4,.b5{
+   width: 100%;
+   min-width: 180px;
+   height: 170px;
+}
+
+.b1{
+   background-color: coral;
+}
+.b2{
+    background-color:blue;
+ }
+ .b3{
+    background-color: yellow;
+ }
+ .b4{
+    background-color:lightgray;
+ }
+ .b5{
+    background-color:black;
+ }
+
+ /*Con @media es un media query en al cual se puede hacer cambios dentro de las llaves y los parentesis*/
+@media (min-width:500px){
+  .b1{
+   width: 25%; 
+   order: 1;
+  }
+  .b2{
+     width: 50%;
+     order:2;
+  }
+  .b3{
+     width: 75%;
+     order: 3;
+  }
+  .b4{
+      /*Con order se puede cambiar el orden del contenedor  */
+     width: 100%;
+     order: 4;
+  }
+}
+
+@media(min-width:650px){
+   .b5{
+      background-color: blueviolet;
+   }
+}
